@@ -124,7 +124,17 @@
   </head>
   <body class="mixpanel-platform-body">
     <h1>Hello, World!</h1>
+    <div id='tabular'></div>
     <script>
+    jQuery('#tabular').tabularInput({
+      	'rows': 3,
+      	'columns': 5,
+      	'newRowOnTab': true,
+      	'maxRows': 6,
+      	'animate': true,
+      	'columnHeads': ['Event Name', 'Trigger', 'Properties', 'Super Properties', 'Pass/Fail']
+      });
+        
       debugger;
     </script>
   </body>
